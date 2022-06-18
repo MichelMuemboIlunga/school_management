@@ -12,9 +12,9 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.io.Serializable;
 
-@Entity
+//@Entity
 public class Address implements Serializable {
-    @NotNull
+    /*@NotNull
     @Id
     private String unitNumber;
 
@@ -25,7 +25,7 @@ public class Address implements Serializable {
 
     @Embedded
     @NotNull
-    private City city;
+  //  private City city;
 
     protected Address(){}
 
@@ -125,5 +125,5 @@ public class Address implements Serializable {
                 ", postCode=" + postCode +
                 ", city=" + city +
                 '}';
-    }
+    }*/
 }
