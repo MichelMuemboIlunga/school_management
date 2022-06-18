@@ -7,18 +7,16 @@ package za.ac.cput.schoolmanagement.factory;
  * Date 16 June 2022
  */
 
-import za.ac.cput.schoolmanagement.domain.Country;
+import za.ac.cput.schoolmanagement.util.helper;
+
 
 
 public class CountryFactory {
 
 
-    public static Country createCountry(String id, String name){
-
-        Country country = new Country.Builder()
-                .setId(id)
-                .setName(name)
-                .build();
-        return null;
+    public static Country build(String countryId, String countryName){
+        helper.checkStringParam("countryId",countryId);
+        helper.checkStringParam("countryName", countryName);
+        return new Country.Builder().setCountryId(countryId).setCountryName (countryName).build();
     }
 }

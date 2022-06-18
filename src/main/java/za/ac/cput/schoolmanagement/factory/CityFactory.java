@@ -9,17 +9,20 @@ package za.ac.cput.schoolmanagement.factory;
 
 import za.ac.cput.schoolmanagement.domain.City;
 import za.ac.cput.schoolmanagement.domain.Country;
+import za.ac.cput.schoolmanagement.util.helper;
+
 
 public class CityFactory {
 
-    public static City createCity(String id, String name, Country country){
+    public static City build(String  id, String name, Country country)
+            throws IllegalArgumentException{
+        helper.checkStringParam("id",id);
+        helper.checkStringParam("name",name);
 
-        City city = new City.Builder()
-                .setId(id)
+        return new City.Builder().setId(id)
                 .setName(name)
                 .setCountry(country)
                 .build();
-        return city;
 
 
     }

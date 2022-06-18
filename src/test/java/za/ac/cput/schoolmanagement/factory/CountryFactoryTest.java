@@ -14,6 +14,20 @@ import static org.junit.jupiter.api.Assertions.*;
 class CountryFactoryTest {
 
     @Test
-    void createCountry() {
+    public void buildWithSucess (){
+        Country country = CountryFactory.build ("DRC","Kinshasa");
+        System.out.println(country);
+        assertNotNull(country);
+    }
+
+    @Test
+    public void buildWithError() {
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> CountryFactory
+                .build(null, "South Africa"));
+
+        String exceptionMessage = exception.getMessage();
+        System.out.println(exceptionMessage);
+        assertSame("country ID is required!", exceptionMessage);
     }
 }
