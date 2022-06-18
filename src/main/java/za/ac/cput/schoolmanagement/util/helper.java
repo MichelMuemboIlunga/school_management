@@ -25,4 +25,6 @@ public class helper {
             return false;
     }
 
+    public static void checkStringParam(String studentId, String studentId1) {
+    }
 }

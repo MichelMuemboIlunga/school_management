@@ -6,7 +6,9 @@ import za.ac.cput.schoolmanagement.util.helper;
 import java.time.temporal.ValueRange;
 
 public class AddressFactory {
-    public static Address createAddress(String unitNumber, String complexName, String streetNumber, String streetName, int postCode, City city) {
+    public static Address createAddress(String unitNumber, String complexName,
+                                        String streetNumber, String streetName, int postCode,
+                                        City city) {
 
         int minValue = 1000;
         int maxValue = 9999;
@@ -25,7 +27,9 @@ public class AddressFactory {
 
         }
 
-        return new Address.Builder().setUnitNumber(unitNumber).setComplexName(complexName).setStreetNumber(streetNumber).setStreetName(streetName).setPostCode(postCode).build();
+        return new Address.Builder().setUnitNumber(unitNumber)
+                .setComplexName(complexName).setStreetNumber(streetNumber)
+                .setStreetName(streetName).setPostCode(postCode).build();
 
     }
 }
