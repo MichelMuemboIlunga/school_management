@@ -23,6 +23,11 @@ public class EmployeeServiceImpl implements IEmployeeService {
     }
 
     @Override
+    public Optional<Employee> findEmployeeByStaffID(String staffId) {
+        return this.repo.findEmployeeByStaffID(staffId);
+    }
+
+    @Override
     public Employee save(Employee employee) {
         return this.repo.save(employee);
     }

@@ -1,17 +1,18 @@
 package za.ac.cput.schoolmanagement.domain.student;
 
 import com.sun.istack.NotNull;
-import za.ac.cput.schoolmanagement.domain.Address;
+import za.ac.cput.schoolmanagement.domain.lookup.Address;
 
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @Table(name = "tStudentAddress")
-public class StudentAddress {
+public class StudentAddress implements Serializable {
 
     @Id
     @NotNull

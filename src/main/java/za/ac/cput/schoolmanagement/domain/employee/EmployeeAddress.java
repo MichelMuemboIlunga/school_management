@@ -1,7 +1,7 @@
 package za.ac.cput.schoolmanagement.domain.employee;
 
 import com.sun.istack.NotNull;
-import za.ac.cput.schoolmanagement.domain.Address;
+import za.ac.cput.schoolmanagement.domain.lookup.Address;
 
 import javax.persistence.Embedded;
 import javax.persistence.Entity;

@@ -1,7 +1,7 @@
 package za.ac.cput.schoolmanagement.factory.lookup;
 
-import za.ac.cput.schoolmanagement.domain.Address;
 import za.ac.cput.schoolmanagement.domain.country.City;
+import za.ac.cput.schoolmanagement.domain.lookup.Address;
 import za.ac.cput.schoolmanagement.util.helper;
 
 import java.time.temporal.ValueRange;

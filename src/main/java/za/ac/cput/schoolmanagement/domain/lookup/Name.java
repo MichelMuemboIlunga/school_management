@@ -12,8 +12,11 @@ import com.sun.istack.NotNull;
 
 import javax.persistence.*;
 import java.io.Serializable;
+
 @Embeddable
 public class Name implements Serializable {
+
+    @NotNull
     private String firstName;
     private String middleName;
 

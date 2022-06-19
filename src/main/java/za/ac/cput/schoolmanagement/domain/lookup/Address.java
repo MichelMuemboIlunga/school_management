@@ -3,7 +3,7 @@
  * Author: Muembo Ilunga Michel (218303335)
  * Date: 15 June 2022
  */
-package za.ac.cput.schoolmanagement.domain;
+package za.ac.cput.schoolmanagement.domain.lookup;
 
 import com.sun.istack.NotNull;
 import org.hibernate.annotations.GenericGenerator;

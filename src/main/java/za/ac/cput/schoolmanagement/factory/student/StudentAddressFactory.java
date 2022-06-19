@@ -1,6 +1,7 @@
 package za.ac.cput.schoolmanagement.factory.student;
 
-import za.ac.cput.schoolmanagement.domain.Address;
+
+import za.ac.cput.schoolmanagement.domain.lookup.Address;
 import za.ac.cput.schoolmanagement.domain.student.StudentAddress;
 import za.ac.cput.schoolmanagement.util.helper;
 

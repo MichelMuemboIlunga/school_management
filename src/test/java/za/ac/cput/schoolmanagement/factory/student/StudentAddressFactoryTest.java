@@ -1,7 +1,7 @@
 package za.ac.cput.schoolmanagement.factory.student;
 
 import org.junit.jupiter.api.Test;
-import za.ac.cput.schoolmanagement.domain.Address;
+import za.ac.cput.schoolmanagement.domain.lookup.Address;
 import za.ac.cput.schoolmanagement.domain.student.StudentAddress;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;

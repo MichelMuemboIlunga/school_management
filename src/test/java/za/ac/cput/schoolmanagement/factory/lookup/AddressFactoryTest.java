@@ -1,9 +1,13 @@
 package za.ac.cput.schoolmanagement.factory.lookup;
+/*
+ * Address Entity
+ * Author: Muembo Ilunga Michel (218303335)
+ * Date: 15 June 2022
+ */
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import za.ac.cput.schoolmanagement.domain.Address;
 import za.ac.cput.schoolmanagement.domain.country.City;
+import za.ac.cput.schoolmanagement.domain.lookup.Address;
 
 import static org.junit.jupiter.api.Assertions.*;
 
