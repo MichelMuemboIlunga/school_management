@@ -1,4 +1,6 @@
 package za.ac.cput.schoolmanagement.service.student;
 
-public interface IStudentService {
+import za.ac.cput.schoolmanagement.service.IService;
+
+public interface IStudentService extends IService {
 }

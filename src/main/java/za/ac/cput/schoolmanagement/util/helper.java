@@ -1,21 +1,16 @@
 package za.ac.cput.schoolmanagement.util;
-
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.Range;
+import org.apache.commons.validator.routines.EmailValidator;
+
+
+import java.time.temporal.ValueRange;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class helper {
-
-    public static boolean isEmptyOrNull(String str) {
+    public static boolean isEmptyOrNull(String str){
         return StringUtils.isEmpty(str);
-    }
-    public static String EmptyIfNull(String str) {
-        if (isEmptyOrNull(str))
-            return "";
-        return str;
-    }
-
-    public static void checkStringPara(String paraName, String paraValue) {
-        if (isEmptyOrNull(paraValue))
-            throw new IllegalArgumentException("Invalid Value for " + paraValue);
-
     }
 
     public static boolean isValidString(String firstName) {
@@ -25,6 +20,28 @@ public class helper {
             return false;
     }
 
+<<<<<<< HEAD
     public static void checkStringParam(String studentId, String studentId1) {
     }
 }
+=======
+    public static void checkStringPara(String paraName, String paraValue) {
+        if (isEmptyOrNull(paraValue))
+            throw new IllegalArgumentException("Invalid Value for " + paraValue);
+
+    }
+
+    public static void checkEmail(String s){
+        EmailValidator emailValidator = EmailValidator.getInstance();
+        if (!emailValidator.isValid(s))
+            throw new IllegalArgumentException("Email not valid");
+    }
+
+    public static void checkIfObjectNull(String objectName, Object object) {
+        if (object == null) {
+            throw new IllegalArgumentException(String.format("%s is null", objectName));
+        }
+    }
+
+}
+>>>>>>> upstream/master
