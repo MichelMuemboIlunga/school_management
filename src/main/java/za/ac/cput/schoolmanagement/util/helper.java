@@ -20,6 +20,11 @@ public class helper {
             return false;
     }
 
+<<<<<<< HEAD
+    public static void checkStringParam(String studentId, String studentId1) {
+    }
+}
+=======
     public static void checkStringPara(String paraName, String paraValue) {
         if (isEmptyOrNull(paraValue))
             throw new IllegalArgumentException("Invalid Value for " + paraValue);
@@ -39,3 +44,4 @@ public class helper {
     }
 
 }
+>>>>>>> upstream/master
